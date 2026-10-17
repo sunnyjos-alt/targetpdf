@@ -178,7 +178,7 @@
 let worker = null;
 function ensureWorker() {
   if (worker) return worker;
-  worker = new Worker('/worker.js');
+  worker = new Worker('/worker.js', { type: 'module' });
   return worker;
 }
 
