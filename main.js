@@ -175,12 +175,12 @@
     if (text) progressText.textContent = text;
   }
 
-  let worker = null;
-  function ensureWorker() {
-    if (worker) return worker;
-    worker = new Worker('js/worker.js', { type: 'module' });
-    return worker;
-  }
+let worker = null;
+function ensureWorker() {
+  if (worker) return worker;
+  worker = new Worker('/worker.js');
+  return worker;
+}
 
   analyseLink.addEventListener('click', function () {
     if (!currentFile || analysisRunning) return;
