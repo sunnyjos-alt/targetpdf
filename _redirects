@@ -1,3 +1,4 @@
 /js/*  /js/:splat  200
+/worker.js  /worker.js  200
 /sitemap.xml  /sitemap.xml  200
 /*  /index.html  200
