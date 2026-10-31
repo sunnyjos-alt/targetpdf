@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TargetPDF — Compress any PDF to the exact size you need</title>
 <meta name="description" content="Compress any PDF to the exact size you need. Private, free, no login. Files never leave your device.">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -52,9 +56,10 @@
   /* ---------- Header ---------- */
   header { text-align: center; margin-bottom: 20px; }
   header .logo { display: inline-flex; align-items: center; gap: 10px; }
-  header .logo svg.logo-img {
+  header .logo .logo-img {
     width: 44px; height: 44px; display: block; flex-shrink: 0;
     filter: drop-shadow(0 4px 12px rgba(99,102,241,0.35));
+    object-fit: contain;
   }
   header .wordmark {
     font-size: 30px; font-weight: 800; letter-spacing: -0.8px; line-height: 1;
@@ -1097,30 +1102,12 @@
 
   <header>
     <div class="logo">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="logo-img" aria-hidden="true">
-        <defs>
-          <linearGradient id="bullseyeBlue" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#3b82f6"/>
-            <stop offset="100%" stop-color="#6366f1"/>
-          </linearGradient>
-          <linearGradient id="targetGradient" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#1e3a8a"/>
-            <stop offset="100%" stop-color="#0f172a"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="30" fill="url(#targetGradient)"/>
-        <circle cx="32" cy="32" r="22" fill="#ffffff"/>
-        <circle cx="32" cy="32" r="14" fill="#1e3a8a"/>
-        <circle cx="32" cy="32" r="7" fill="url(#bullseyeBlue)"/>
-        <circle cx="32" cy="32" r="2.8" fill="#ffffff"/>
-        <path d="M 32 32 L 62 2" stroke="#6366f1" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M 60 4 L 63 1 L 63 7 L 60 4 Z" fill="#3b82f6"/>
-      </svg>
+      <img src="logo.png" alt="TargetPDF Logo" class="logo-img">
       <span class="wordmark">
         <span class="target">Target</span><span class="pdf">PDF</span>
       </span>
     </div>
-    <p>Compress any PDF to the exact size you need — privately, without losing readability.</p>
+   <p>Compress any PDF to the exact size you need — privately, without losing readability.</p>
   </header>
 
   <div class="card">
@@ -1225,6 +1212,30 @@
     </div>
 
   </div>
+  <!-- ================= PRO DOCUMENT TOOLS GRID ================= -->
+  <div class="info-section" style="margin-top: 10px; margin-bottom: 30px;">
+    <h2 style="text-align: center;">Pro Document Tools</h2>
+    <p class="subtitle" style="text-align: center; margin-left: auto; margin-right: auto;">Free, fast, and secure conversions. No login required.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 32px;">
+      
+      <!-- PDF TO IMAGE (Links to your separate file) -->
+      <a href="pdf-to-image.html" style="background: #fff; border: 1.5px solid #e5e9f0; border-radius: 16px; padding: 24px 20px; text-align: center; text-decoration: none; display: block; transition: all 0.2s; box-shadow: 0 4px 12px rgba(15,23,42,0.03);">
+        <div style="width: 52px; height: 52px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; color: #fff; font-size: 26px; background: linear-gradient(135deg, #f59e0b, #d97706); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">🖼️</div>
+        <h4 style="font-size: 17px; font-weight: 800; color: var(--ink); margin-bottom: 6px;">PDF to Image</h4>
+        <p style="font-size: 13.5px; color: #64748b; font-weight: 500;">Convert pages to JPG/PNG</p>
+      </a>
+
+      <!-- IMAGE TO PDF (Links to your separate file) -->
+      <a href="image-to-pdf.html" style="background: #fff; border: 1.5px solid #e5e9f0; border-radius: 16px; padding: 24px 20px; text-align: center; text-decoration: none; display: block; transition: all 0.2s; box-shadow: 0 4px 12px rgba(15,23,42,0.03);">
+        <div style="width: 52px; height: 52px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; color: #fff; font-size: 26px; background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 4px 12px rgba(0,0,0,0.1);">📸</div>
+        <h4 style="font-size: 17px; font-weight: 800; color: var(--ink); margin-bottom: 6px;">Image to PDF</h4>
+        <p style="font-size: 13.5px; color: #64748b; font-weight: 500;">Combine photos to PDF</p>
+      </a>
+
+    </div>
+  </div>
+  <!-- ============================================================ -->
 
   <!-- Trust strip — below upload -->
   <div class="trust-strip">
@@ -1466,17 +1477,9 @@
 <!-- ============================================================ -->
 <div class="container wide screen" id="screenResult">
 
-  <header>
+   <header>
     <div class="logo">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="logo-img" aria-hidden="true">
-        <circle cx="32" cy="32" r="30" fill="#0f172a"/>
-        <circle cx="32" cy="32" r="22" fill="#ffffff"/>
-        <circle cx="32" cy="32" r="14" fill="#1e3a8a"/>
-        <circle cx="32" cy="32" r="7" fill="#6366f1"/>
-        <circle cx="32" cy="32" r="2.8" fill="#ffffff"/>
-        <path d="M 32 32 L 62 2" stroke="#6366f1" stroke-width="3.5" stroke-linecap="round"/>
-        <path d="M 60 4 L 63 1 L 63 7 L 60 4 Z" fill="#3b82f6"/>
-      </svg>
+      <img src="logo.png" alt="TargetPDF Logo" class="logo-img">
       <span class="wordmark">
         <span class="target">Target</span><span class="pdf">PDF</span>
       </span>
